@@ -43,7 +43,7 @@ function desplazar (str,offset){// la funcion desplazar requiere una cadena y el
   }
   //console.log(desplazado)
   //console.log(desplazado.join(''))
-  let movida = desplazado.join('')
+  let movida = desplazado.join('') // convierte el arreglo desplazado a un str
   return movida 
 }
 //...................................................................................................................
