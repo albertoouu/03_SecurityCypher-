@@ -1,4 +1,9 @@
+//cipher.saludar()
+let boton = document.getElementById("encoding")
+boton.addEventListener("click",function (){cipher.saludar()})
 //............................................Funcion para "rotar" un arreglo un "n" veces...........................
+
+
 function rotar (arr, des){
   for(let i=0; i<des; i++){
     arr.unshift(arr.pop())
