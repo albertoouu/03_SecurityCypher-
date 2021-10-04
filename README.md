@@ -4,16 +4,16 @@
 Índice
 
     1. Descripción 
-    2. Nececidades del Cliente
+    2. Necesidades del Cliente
     3. App Cifrado y Descifrado
-    4. Maquetado
-    5. Diagrama de flujo
+    4. Diagrama de Flujo
+    5. Maquetado
     6. Pseudocódigo
     
 ---
 ## 1. Descripción 
 
-Se nececita una aplicación que pueda cifrar y desifrar texto, mensajes que serán reenviados por diferentes medios a travez del celular , como mensajes de texto sms y whats
+Se necesita una aplicación que pueda cifrar y desifrar texto, mensajes que serán reenviados por diferentes medios a travez del celular , como mensajes de texto sms y whats
 
 ---
 ## 2. Nececidades del cliente 
@@ -33,12 +33,12 @@ La apliacación tiene una patalla de inicio y bienvenida en donde se selecciona 
     Al seleccionar descifrar dirige a una ventana con la casilla "imput" para agregar el texto a descifrar, a continuación un botón que activa la función descifrar, al dar click nos devolverá el mensaje descifrado. 
 
 ---
-## 4. Maquetado
-![Maquetado](./assets/UIcypher.jpg)
+## 4. Diagrama de Flujo
+![Diagrama](./assets/Diagrama.jpeg)
 
 ---
-## 5. Diagrama de Flujo
-![Diagrama](./assets/Diagrama.jpeg)
+## 5. Maquetado
+![Maquetado](./assets/Inicio.png) ![Maquetado](./assets/Cifrado.png) ![Maquetado](./assets/Desifrado.png) 
 
 ---
 ## 6. Pseudocódigo
