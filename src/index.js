@@ -9,7 +9,7 @@ function rotar (arr, des){
 
 
 console.log("............................")
-let str1 ="Hola mudo";
+let str1 ="Holamudo";
 
 
 //............................................Arreglos necesarios para las funciones desplazar y regresar............
