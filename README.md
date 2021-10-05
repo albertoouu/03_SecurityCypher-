@@ -40,6 +40,8 @@ La aplicación tiene una pantalla de inicio y bienvenida en donde se selecciona 
 ## 5. Maquetado
 ![Maquetado](./assets/Inicio.png) ![Maquetado](./assets/Cif.png) ![Maquetado](./assets/Cifrado.png) ![Maquetado](./assets/Descifrado.png) 
 
+Prototipo : https://marvelapp.com/prototype/698c159/screen/82441596
+
 ---
 ## 6. Pseudocódigo
 ---

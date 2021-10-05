@@ -1,0 +1,25 @@
+body {
+  background-color:  #4d4d4d;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(241, 52, 52);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.entrada {
+    padding: 10px;
+    border-radius: 12px;
+    color: #4d4d4d;
+}
+
+
+#Ini {
+    background-color:  #45c54b;
+    padding: 15px;
+    border-radius: 12px;
+    color: #4d4d4d;
+}
+
+
