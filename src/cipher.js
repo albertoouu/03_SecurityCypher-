@@ -3,7 +3,7 @@ window.cipher = {
     console.log("Hello")
   },
   name: "beto",
-  encode: function (offset,str){
+  encode: function encode (offset,str){
     if(!(typeof(str)==='string')){
       let noEs = "Error, ingrese una cadena de caracteres"
       return  noEs

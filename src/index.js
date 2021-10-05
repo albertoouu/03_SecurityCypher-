@@ -40,10 +40,7 @@ bdescifrar.addEventListener('click', function(){
   console.log(textd)
   console.log(cipher.decode(1,textd))
   document.getElementById('parrafoDescifrar').innerHTML = cipher.decode(1,textd)
-  let regresaDes = document.getElementById('regresaDes')
-  regresaDes.addEventListener('click',function(){
-    console.log("regresaDes")
-  })
+
 })
 
 let bcifrar =document.getElementById('bcifrar')
@@ -54,6 +51,21 @@ bcifrar.addEventListener('click', function(){
   document.getElementById('parrafoCifrar').innerHTML = cipher.encode(1,textd)
 })
 
+let regresaDes = document.getElementById('regresaDes')
+regresaDes.addEventListener('click',function(){
+ console.log("regresaDes")
+ document.getElementById("p2").hidden =false
+ document.getElementById("p3").hidden =true
+ document.getElementById('p4').hidden = true
+})
+
+let regresaCi = document.getElementById('regresaCi')
+regresaCi.addEventListener('click',function(){
+ console.log("regresaDes")
+ document.getElementById("p2").hidden =false
+ document.getElementById("p3").hidden =true
+ document.getElementById('p4').hidden = true
+})
 /*
 cipher.saludar()
 let boton = document.getElementById("encoding")
