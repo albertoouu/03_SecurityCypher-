@@ -1,5 +1,4 @@
-
-console.log(cipher.saludar())
+//onsole.log(cipher.saludar())
 document.getElementById("p2").hidden =true
 document.getElementById("p3").hidden =true
 document.getElementById('p4').hidden = true
@@ -41,14 +40,18 @@ bdescifrar.addEventListener('click', function(){
   console.log(textd)
   console.log(cipher.decode(1,textd))
   document.getElementById('parrafoDescifrar').innerHTML = cipher.decode(1,textd)
+  let regresaDes = document.getElementById('regresaDes')
+  regresaDes.addEventListener('click',function(){
+    console.log("regresaDes")
+  })
 })
 
 let bcifrar =document.getElementById('bcifrar')
 bcifrar.addEventListener('click', function(){
   let textd = document.getElementById('acifrar').value
   console.log(textd)
-  console.log(cipher.code(1,textd))
-  document.getElementById('parrafoCifrar').innerHTML = cipher.code(1,textd)
+  console.log(cipher.encode(1,textd))
+  document.getElementById('parrafoCifrar').innerHTML = cipher.encode(1,textd)
 })
 
 /*
@@ -100,7 +103,7 @@ function decode (offset,str){
 }
 
 let str = "HoLa MuDo"
-let x = code(1,str)
+let x = encode(1,str)
 console.log(x)
 let y = decode(1,str)
 console.log(y)

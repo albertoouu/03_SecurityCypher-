@@ -3,7 +3,7 @@ window.cipher = {
     console.log("Hello")
   },
   name: "beto",
-  code: function code (offset,str){
+  encode: function (offset,str){
     if(!(typeof(str)==='string')){
       let noEs = "Error, ingrese una cadena de caracteres"
       return  noEs
@@ -19,6 +19,7 @@ window.cipher = {
       }  
       }
     }
+    console.log(typeof(desplazado))
     return desplazado
   },
   decode: function decode (offset,str){
@@ -38,10 +39,11 @@ window.cipher = {
       }
     }
     return desplazado
+  },
+  createCipherWithOffset: function createCipherWithOffset (offset){
+    console.log("el offser es" + offset)
   }
 };
-
-
 
 
 
