@@ -1,4 +1,5 @@
-console.log(cipher.code(1,"abc"))
+
+console.log(cipher.saludar())
 document.getElementById("p2").hidden =true
 document.getElementById("p3").hidden =true
 document.getElementById('p4').hidden = true
