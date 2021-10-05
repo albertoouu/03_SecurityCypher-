@@ -4,7 +4,7 @@ boton.addEventListener("click",function (){cipher.saludar()})
 
 
 
-
+/*
 function code (offset,str){
   if(!(typeof(str)==='string')){
     let noEs = "Error, ingrese una cadena de caracteres"
@@ -51,3 +51,4 @@ console.log(x)
 let y = decode(1,str)
 console.log(y)
 console.log(decode(1,code(1,str)))
+*/
