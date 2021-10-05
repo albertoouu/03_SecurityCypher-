@@ -1,3 +1,4 @@
+console.log(cipher.code(1,"abc"))
 document.getElementById("p2").hidden =true
 document.getElementById("p3").hidden =true
 document.getElementById('p4').hidden = true
@@ -23,7 +24,6 @@ document.getElementById("p1").hidden =true
 document.getElementById("p2").hidden =true
 document.getElementById('p3').hidden = true
 document.getElementById('p4').hidden = false
-
 })
 
 let descifrar = document.getElementById('descifrar')
@@ -33,6 +33,23 @@ document.getElementById("p2").hidden =true
 document.getElementById('p4').hidden = true
 document.getElementById('p3').hidden = false
 })
+
+let bdescifrar =document.getElementById('bdescifrar')
+bdescifrar.addEventListener('click', function(){
+  let textd = document.getElementById('adescifrar').value
+  console.log(textd)
+  console.log(cipher.decode(1,textd))
+  document.getElementById('parrafoDescifrar').innerHTML = cipher.decode(1,textd)
+})
+
+let bcifrar =document.getElementById('bcifrar')
+bcifrar.addEventListener('click', function(){
+  let textd = document.getElementById('acifrar').value
+  console.log(textd)
+  console.log(cipher.code(1,textd))
+  document.getElementById('parrafoCifrar').innerHTML = cipher.code(1,textd)
+})
+
 /*
 cipher.saludar()
 let boton = document.getElementById("encoding")
