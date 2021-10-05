@@ -38,7 +38,7 @@ La apliacación tiene una patalla de inicio y bienvenida en donde se selecciona 
 
 ---
 ## 5. Maquetado
-![Maquetado](./assets/Inicio.png) ![Maquetado](./assets/Cifrado.png) ![Maquetado](./assets/Desifrado.png) 
+![Maquetado](./assets/Inicio.png) ![Maquetado](./assets/Cif.png) ![Maquetado](./assets/Cifrado.png) ![Maquetado](./assets/Desifrado.png) 
 
 ---
 ## 6. Pseudocódigo
