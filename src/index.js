@@ -1,7 +1,43 @@
-//cipher.saludar()
+document.getElementById("p2").hidden =true
+document.getElementById("p3").hidden =true
+document.getElementById('p4').hidden = true
+
+let ini =document.getElementById('Ini')
+ini.addEventListener('click', function (){
+  let user = document.getElementById('usuario').value
+  let password = document.getElementById('key').value
+  console.log(user)
+  console.log(password)
+  if(user == "usuario" && password == 123){
+  document.getElementById('header').hidden = true
+  document.getElementById('p1').hidden = true
+  document.getElementById('p2').hidden = false
+  } else {
+    console.log("contraseña o usuario no validos")
+  }
+})
+
+let cifrar = document.getElementById('cifrar')
+cifrar.addEventListener('click',function(){
+document.getElementById("p1").hidden =true
+document.getElementById("p2").hidden =true
+document.getElementById('p3').hidden = true
+document.getElementById('p4').hidden = false
+
+})
+
+let descifrar = document.getElementById('descifrar')
+descifrar.addEventListener('click',function(){
+document.getElementById("p1").hidden =true
+document.getElementById("p2").hidden =true
+document.getElementById('p4').hidden = true
+document.getElementById('p3').hidden = false
+})
+/*
+cipher.saludar()
 let boton = document.getElementById("encoding")
 boton.addEventListener("click",function (){cipher.saludar()})
-
+*/
 
 
 /*

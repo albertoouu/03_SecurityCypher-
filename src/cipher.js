@@ -34,7 +34,7 @@ window.cipher = {
       } else { if(str.charCodeAt(i)>=97 && str.charCodeAt(i)<=122){
         desplazado = desplazado + String.fromCharCode((str.charCodeAt(i)-offset-97 +26)%26+97)
       } else {
-        desplazado =desplazado + String.fromCharCode(str.charCodeAt(i))
+        desplazado =desplazado + " ";/*String.fromCharCode(str.charCodeAt(i))*/
       }   
       }
     }
