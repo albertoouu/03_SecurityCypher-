@@ -7,8 +7,8 @@ let ini =document.getElementById('Ini') // se jala el boton (id="Ini")
 ini.addEventListener('click', function (){ // se agrega un addEventListener a el boton y cuando se clickea ejecuta:
   let user = document.getElementById('usuario').value // obtiene el valor del input "usuario" y lo guarda en la variable usuario
   let password = document.getElementById('pass').value // obtiene el valor del input "pass" y lo gurda en password
-  console.log(user) 
-  console.log(password)
+  //console.log(user) 
+  //console.log(password)
   if(user == "usuario" && password == 123){ //se establece el usuario y la contraseña y si se cumplen las condiciones se ejectua:
   document.getElementById('header').hidden = true // se oculta el header
   document.getElementById('p1').hidden = true //se oculta la pantalla 1
@@ -33,22 +33,26 @@ document.getElementById("p2").hidden =true //se oculta la pantalla 2
 document.getElementById('p4').hidden = true //se oculta la pantalla 4
 document.getElementById('p3').hidden = false //se muestra la pantalla 3
 })
-// en la pantalla 4 se muestra el input del key, el input de la cadena a mostrar y dos botones uno para cifrar y otro para regresar a la pantalla 2
+// en la pantalla 3 se muestra el input del key, el input de la cadena a mostrar y dos botones uno para cifrar y otro para regresar a la pantalla 2
 let bdescifrar =document.getElementById('bdescifrar')// se agrega un evento al boton "bdescifrar" 
 bdescifrar.addEventListener('click', function(){// si se clickea se ejecuta:
   let textd = document.getElementById('adescifrar').value //obtiene el valor del input "adescifrar" y lo guarda en la variable textd
-  console.log(textd)
-  console.log(cipher.decode(1,textd))
-  document.getElementById('parrafoDescifrar').innerHTML = cipher.decode(1,textd)// Subsituye lo que hay en "parrafoDescifrar" por el valor que te regresa cipher.:w
+  let key1 = document.getElementById("key1").value // obtiene el valor del input "key2" del html y lo guarda en la variable "key"....................................................................................
+  console.log(key1+".............")
+  console.log(cipher.decode(parseInt(key1),textd))
+  document.getElementById('parrafoDescifrar').innerHTML = cipher.decode(parseInt(key1),textd)// Subsituye lo que hay en "parrafoDescifrar" por el valor que te regresa cipher.:w
 
 })
 
 let bcifrar =document.getElementById('bcifrar')
 bcifrar.addEventListener('click', function(){
   let textd = document.getElementById('acifrar').value
+  let key2 = document.getElementById("key2").value // obtiene el valor del input "key" del html y lo guarda en la variable "key"....................................................................................
+  console.log(key2+".............")
+  console.log(typeof(parseInt(key2)))
   console.log(textd)
-  console.log(cipher.encode(1,textd))
-  document.getElementById('parrafoCifrar').innerHTML = cipher.encode(1,textd)
+  console.log(cipher.encode(parseInt(key2),textd))
+  document.getElementById('parrafoCifrar').innerHTML = cipher.encode(parseInt(key2),textd)
 })
 
 let regresaDes = document.getElementById('regresaDes')

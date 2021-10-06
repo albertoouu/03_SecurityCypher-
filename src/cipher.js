@@ -15,7 +15,7 @@ window.cipher = {
       }  
       }
     }
-    console.log(typeof(desplazado))
+    //console.log(typeof(desplazado))
     return desplazado
   },
   decode: function decode (offset,str){
