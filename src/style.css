@@ -19,7 +19,7 @@ main {
     align-items: center;
 }
 
-.entrada {
+#usuario, #pass {
     margin: 12px;
     padding: 12px;
     border-radius: 12px;
@@ -46,4 +46,14 @@ main {
     text-align: center;
 }
 
+#p1 {
 
+}
+
+#key1, #key2{
+    margin: 5px;
+    padding: 5px;
+    width: 50px;
+    border-radius: 12px;
+    color: #4d4d4d;
+}
