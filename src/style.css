@@ -1,14 +1,18 @@
 body {
   background-color:  #4d4d4d;
   line-height: 1.5;
-  text-align: center;
   display: grid;
   justify-content: center;
-  align-items: center;
+  
 }
+
+
 
 h1{
     color: rgb(241, 52, 52); 
+    text-align: center;
+    font-size: 55px;
+
 }
 
 
@@ -17,6 +21,7 @@ main {
     display: grid;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 #usuario, #pass {
@@ -33,27 +38,58 @@ main {
     width: 170px;
     border-radius: 12px;
     color: #4d4d4d;
-    text-align: center;
-}
-
-#descifrar {
-    background-color: rgb(241, 87, 40);
-    margin: 13px;
-    padding: 15px;
-    width: 170px;
-    border-radius: 12px;
-    color: #4d4d4d;
-    text-align: center;
-}
-
-#p1 {
-
+    
 }
 
 #key1, #key2{
     margin: 5px;
     padding: 5px;
     width: 50px;
+    border-radius: 12px;
+    color: #4d4d4d;
+    justify-items: right; 
+}
+
+#descifrar, #bcifrar, #bdescifrar {
+    background-color: rgb(241, 87, 40);
+    margin: 5px;
+    padding: 15px;
+    width: 170px;
+    border-radius: 12px;
+    text-align: center;
+    color: #4d4d4d;    
+}
+
+#adescifrar, #acifrar {
+    margin: 5px;
+    padding: 50px;
+    width: 180px;
+    border-radius: 12px;
+    color: #4d4d4d;
+    justify-items: right; 
+}
+
+#keys, #keyss {
+    display:flex;
+    flex-direction: row;
+    align-items: right;
+    color: #fff;
+    text-align: right;
+    
+}
+
+#parrafoCifrar, #parrafoDescifrar {
+    display:flex;
+    flex-direction: row;
+    color: #fff;
+    text-align: left;
+}
+
+#regresaCi, #regresaDes {
+    background-color:  #45c54b;
+    margin: 13px;
+    padding: 15px;
+    width: 170px;
     border-radius: 12px;
     color: #4d4d4d;
 }
