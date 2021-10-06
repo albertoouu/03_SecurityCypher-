@@ -2,24 +2,47 @@ body {
   background-color:  #4d4d4d;
   line-height: 1.5;
   text-align: center;
-  color: rgb(241, 52, 52);
   display: grid;
   justify-content: center;
   align-items: center;
 }
 
+h1{
+    color: rgb(241, 52, 52); 
+}
+
+
+main {
+    display: flex;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 .entrada {
-    padding: 10px;
+    margin: 12px;
+    padding: 12px;
     border-radius: 12px;
     color: #4d4d4d;
 }
 
-
-#Ini {
+#Ini, #cifrar {
     background-color:  #45c54b;
+    margin: 13px;
     padding: 15px;
+    width: 170px;
     border-radius: 12px;
     color: #4d4d4d;
+    text-align: center;
 }
 
+#descifrar {
+    background-color: rgb(241, 87, 40);
+    margin: 13px;
+    padding: 15px;
+    width: 170px;
+    border-radius: 12px;
+    color: #4d4d4d;
+    text-align: center;
+}
 
