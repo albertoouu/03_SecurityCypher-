@@ -14,8 +14,7 @@ ini.addEventListener('click', function (){ // se agrega un addEventListener a el
   document.getElementById('p1').hidden = true //se oculta la pantalla 1
   document.getElementById('p2').hidden = false // se muestra la pantalla 2
   } else {
-    console.log("contraseña o usuario no validos") // si la contraseña y el usuario no son los correctos muestra en la consola el mensaje
-    alert("Usuario o contraseña no validos")
+    alert("contraseña o usuario no validos") // si la contraseña y el usuario no son los correctos muestra en la consola el mensaje
   }
 })
 // en la segunda pantalla se muestran dos botones, uno con el boton "cifrar" y el otro "descifrar"
