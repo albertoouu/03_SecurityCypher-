@@ -7,14 +7,14 @@ let ini =document.getElementById('Ini') // se jala el boton (id="Ini")
 ini.addEventListener('click', function (){ // se agrega un addEventListener a el boton y cuando se clickea ejecuta:
   let user = document.getElementById('usuario').value // obtiene el valor del input "usuario" y lo guarda en la variable usuario
   let password = document.getElementById('pass').value // obtiene el valor del input "pass" y lo gurda en password
-  console.log(user) 
-  console.log(password)
+  //console.log(user) 
+  //console.log(password)
   if(user == "usuario" && password == 123){ //se establece el usuario y la contraseña y si se cumplen las condiciones se ejectua:
   document.getElementById('header').hidden = true // se oculta el header
   document.getElementById('p1').hidden = true //se oculta la pantalla 1
   document.getElementById('p2').hidden = false // se muestra la pantalla 2
   } else {
-    console.log("contraseña o usuario no validos") // si la contraseña y el usuario no son los correctos muestra en la consola el mensaje
+    alert("Contraseña o/y usuario no validos") // si la contraseña y el usuario no son los correctos muestra en la consola el mensaje
   }
 })
 // en la segunda pantalla se muestran dos botones, uno con el boton "cifrar" y el otro "descifrar"
@@ -33,38 +33,34 @@ document.getElementById("p2").hidden =true //se oculta la pantalla 2
 document.getElementById('p4').hidden = true //se oculta la pantalla 4
 document.getElementById('p3').hidden = false //se muestra la pantalla 3
 })
-// en la pantalla 4 se muestra el input del key, el input de la cadena a mostrar y dos botones uno para cifrar y otro para regresar a la pantalla 2
+
 let bdescifrar =document.getElementById('bdescifrar')// se agrega un evento al boton "bdescifrar" 
 bdescifrar.addEventListener('click', function(){// si se clickea se ejecuta:
   let textd = document.getElementById('adescifrar').value //obtiene el valor del input "adescifrar" y lo guarda en la variable textd
-  console.log(textd)
-  console.log(cipher.decode(1,textd))
-  document.getElementById('parrafoDescifrar').innerHTML = cipher.decode(1,textd)// Subsituye lo que hay en "parrafoDescifrar" por el valor que te regresa cipher.:w
+  let key1 = document.getElementById("key1").value // obtiene el valor del input "key2" del html y lo guarda en la variable "key1"
+  document.getElementById('parrafoDescifrar').innerHTML = cipher.decode(parseInt(key1),textd)// Subsituye lo que hay en "parrafoDescifrar" por el valor que te regresa cipher.decode(key1,textd)
 
 })
 
-let bcifrar =document.getElementById('bcifrar')
-bcifrar.addEventListener('click', function(){
-  let textd = document.getElementById('acifrar').value
-  console.log(textd)
-  console.log(cipher.encode(1,textd))
-  document.getElementById('parrafoCifrar').innerHTML = cipher.encode(1,textd)
+let bcifrar =document.getElementById('bcifrar')// se agrega un evento al boton "bcifrar"
+bcifrar.addEventListener('click', function(){// si se clickea se ejecuta:
+  let textd = document.getElementById('acifrar').value //obtiene el valor del input "acifrar" y lo guarda en la variable textd
+  let key2 = document.getElementById("key2").value // obtiene el valor del input "key" del html y lo guarda en la variable "key2"
+  document.getElementById('parrafoCifrar').innerHTML = cipher.encode(parseInt(key2),textd)// Substituye lo que hay en "parrafoCifrar" por el valor que te regresa cipher.encode(key2,textd)
 })
 
 let regresaDes = document.getElementById('regresaDes')
-regresaDes.addEventListener('click',function(){
- console.log("regresaDes")
- document.getElementById("p2").hidden =false
- document.getElementById("p3").hidden =true
- document.getElementById('p4').hidden = true
+regresaDes.addEventListener('click',function(){//agrega un addEventListener  a el boton "regresaDes" y si se clickea ejecuta:
+ document.getElementById("p2").hidden =false//se muestra la pantalla 2
+ document.getElementById("p3").hidden =true//se oculta la pantalla 3
+ document.getElementById('p4').hidden = true//se oculta la pantalla 4
 })
 
-let regresaCi = document.getElementById('regresaCi')
+let regresaCi = document.getElementById('regresaCi')//agrega un addEventListener a el boton "regresaCi" y si se clickea ejecuta:
 regresaCi.addEventListener('click',function(){
- console.log("regresaDes")
- document.getElementById("p2").hidden =false
- document.getElementById("p3").hidden =true
- document.getElementById('p4').hidden = true
+ document.getElementById("p2").hidden =false//se muestra la pantalla 2
+ document.getElementById("p3").hidden =true//se oculta la pantalla 3
+ document.getElementById('p4').hidden = true//se oculta la pantalla 4
 })
 /*
 cipher.saludar()
