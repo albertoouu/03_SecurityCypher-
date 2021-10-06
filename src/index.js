@@ -6,7 +6,7 @@ document.getElementById('p4').hidden = true // se oculta la cuarta pantalla
 let ini =document.getElementById('Ini') // se jala el boton (id="Ini")
 ini.addEventListener('click', function (){ // se agrega un addEventListener a el boton y cuando se clickea ejecuta:
   let user = document.getElementById('usuario').value // obtiene el valor del input "usuario" y lo guarda en la variable usuario
-  let password = document.getElementById('key').value // obtiene el valor del input "key" y lo gurda en password
+  let password = document.getElementById('pass').value // obtiene el valor del input "pass" y lo gurda en password
   console.log(user) 
   console.log(password)
   if(user == "usuario" && password == 123){ //se establece el usuario y la contraseña y si se cumplen las condiciones se ejectua:
@@ -20,26 +20,26 @@ ini.addEventListener('click', function (){ // se agrega un addEventListener a el
 // en la segunda pantalla se muestran dos botones, uno con el boton "cifrar" y el otro "descifrar"
 let cifrar = document.getElementById('cifrar') // se agrega un evento al boton de cifrar y si es clickeado ejecuta:
 cifrar.addEventListener('click',function(){
-document.getElementById("p1").hidden =true // 
-document.getElementById("p2").hidden =true
-document.getElementById('p3').hidden = true
-document.getElementById('p4').hidden = false
+document.getElementById("p1").hidden =true // se oculta la pantalla 1 
+document.getElementById("p2").hidden =true // se oculta la pantalla 2
+document.getElementById('p3').hidden = true //se oculta la pantalla 3
+document.getElementById('p4').hidden = false //se muestra la pantalla 4
 })
 
-let descifrar = document.getElementById('descifrar')
+let descifrar = document.getElementById('descifrar') // se agrega un evento al boton de descifrar y si es clickeado ejecuta:
 descifrar.addEventListener('click',function(){
-document.getElementById("p1").hidden =true
-document.getElementById("p2").hidden =true
-document.getElementById('p4').hidden = true
-document.getElementById('p3').hidden = false
+document.getElementById("p1").hidden =true //se oculta la pantalla 1
+document.getElementById("p2").hidden =true //se oculta la pantalla 2
+document.getElementById('p4').hidden = true //se oculta la pantalla 4
+document.getElementById('p3').hidden = false //se muestra la pantalla 3
 })
-
-let bdescifrar =document.getElementById('bdescifrar')
-bdescifrar.addEventListener('click', function(){
-  let textd = document.getElementById('adescifrar').value
+// en la pantalla 4 se muestra el input del key, el input de la cadena a mostrar y dos botones uno para cifrar y otro para regresar a la pantalla 2
+let bdescifrar =document.getElementById('bdescifrar')// se agrega un evento al boton "bdescifrar" 
+bdescifrar.addEventListener('click', function(){// si se clickea se ejecuta:
+  let textd = document.getElementById('adescifrar').value //obtiene el valor del input "adescifrar" y lo guarda en la variable textd
   console.log(textd)
   console.log(cipher.decode(1,textd))
-  document.getElementById('parrafoDescifrar').innerHTML = cipher.decode(1,textd)
+  document.getElementById('parrafoDescifrar').innerHTML = cipher.decode(1,textd)// Subsituye lo que hay en "parrafoDescifrar" por el valor que te regresa cipher.:w
 
 })
 
