@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="container">
     <header id="header">
       <h1>Cypher</h1>
     </header>
@@ -36,12 +37,12 @@
       </div>
       <div id="p4"><h1>Cifrar</h1>
       <div id= "keys"><p>Key:</p>
-        <input class="entrada" type="number" id="key2"/><br>
+        <input class="entrada" type="number" id="key2"/>
       </div>
-        <input class="entrada" type="text" id="acifrar"/><br>
+        <input class="entrada" type="text" id="acifrar"/>
         <button id="bcifrar">CIFRAR</button>
         <p id="parrafoCifrar">
-          Insctrucciones: <br>
+          Insctrucciones: 
               1. Introdusca dentro del recuadro blanco "Key" la llave para cifrar o descifrar.<br>
               2. Escriba dentro del recuadro grande el texto a cifrar (solo se admiten letras, máyusculas y minúsculas).<br>
               3. Presionar "Cifrar / Descifrar" <br>
@@ -50,8 +51,10 @@
       <button class="boton" id="regresaDes">Regresa</button>
       </div>
     </main>
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+ 
+   
+  </div>
   </body>
+  <script src="cipher.js"></script>
+    <script src="index.js"></script>
 </html>
