@@ -1,12 +1,15 @@
 body {
   background-color: #4d4d4d;
   line-height: 1.5;
+  font-family:  Berkshire Swash; 
 }
 
 h1 {
   color: rgb(241, 52, 52);
   text-align: center;
   font-size: 55px;
+  margin-top: 25px;;
+  margin-bottom: 5px;
 }
 
 main {
@@ -15,11 +18,12 @@ main {
   align-items: center;
   text-align: center;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 #usuario,
 #pass {
-  margin: 12px;
+  margin: 15px;
   padding: 12px;
   border-radius: 12px;
   color: #4d4d4d;
@@ -29,16 +33,18 @@ main {
 #cifrar {
   background-color: #45c54b;
   margin: 13px;
-  padding: 15px;
+  padding: 10px;
   width: 170px;
   border-radius: 12px;
   color: #4d4d4d;
+  font-family: 'Padauk', sans-serif;
+  font-size: 20px;
 }
 
 #key1,
 #key2 {
   margin: 5px;
-  padding: 5px;
+  padding: 7px;
   width: 50px;
   border-radius: 12px;
   color: #4d4d4d;
@@ -48,13 +54,15 @@ main {
 #descifrar,
 #bcifrar,
 #bdescifrar {
-  background-color: rgb(241, 87, 40);
-  margin: 5px;
-  padding: 15px;
+  background-color: rgb(248, 69, 15);
+  margin: 13px;
+  padding: 10px;
   width: 170px;
   border-radius: 12px;
   text-align: center;
   color: #4d4d4d;
+  font-size: 20px;
+  font-family: 'Padauk', sans-serif;
 }
 
 #adescifrar,
@@ -67,14 +75,7 @@ main {
   justify-items: right;
 }
 
-#keyss {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 100px;
-  color: #fff;
-}
-#keys {
+#keyss, #keys {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,39 +87,51 @@ main {
 #parrafoDescifrar {
   display: flex;
   flex-direction: row;
-  color: #fff;
+  color: #4d4d4d;
   text-align: left;
+  background-color: white;
+  border-radius: 9px;
+  font-family: 'Padauk', sans-serif;
+  
 }
 
 #regresaCi,
 #regresaDes {
   background-color: #45c54b;
   margin: 13px;
-  padding: 15px;
+  padding: 10px;
   width: 170px;
   border-radius: 12px;
   color: #4d4d4d;
+  font-family: 'Padauk', sans-serif;
+  font-size: 20px;
 }
+
 @media only screen and (max-width: 600px) {
   #parrafoCifrar,
   #parrafoDescifrar {
     display: flex;
     flex-direction: row;
-    color: #fff;
-    padding-left: 0;
-    padding-right: 0;
+    color: #4d4d4d;
+    padding:5px;
     font-size: 10px;
     text-align: left;
+    background-color: white;
+    border: 9px;
+    font-family: 'Padauk', sans-serif;
   }
 }
 
 #regresaCi, #regresaDes {
     background-color:  #45c54b;
     margin: 13px;
-    padding: 15px;
+    padding: 10px;
     width: 170px;
     border-radius: 12px;
     color: #4d4d4d;
+    font-family: 'Padauk', sans-serif;
+    font-size: 20px;
+  
 }
 
 
