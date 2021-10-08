@@ -102,7 +102,7 @@ se muestra la pantalla 2
 
 ```
 
-2.Psudocodigo cipher.js
+2.Pseudocodigo cipher.js
 
 ```
 
@@ -130,7 +130,10 @@ se implemento de esta manera en el metodo decode.
 
 ## Testing
 
+Usuario: "usuario" 
+Contraseña: "123"
 El producto paso las pruebas unitarias implementadas hasta la fecha, quedan pendientes dos pruebas más.
+Producto Final: https://albertoouu.github.io/03_SecurityCypher-/src/index.html
 
 ---
 
