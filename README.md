@@ -10,6 +10,8 @@
     4. Diagrama de Flujo
     5. Maquetado
     6. Pseudocódigo
+    7. Testing
+    8. Deployment
 
 ---
 
@@ -128,7 +130,7 @@ se implemento de esta manera en el metodo decode.
 
 ```
 
-## Testing
+## 7. Testing
 
 Usuario: "usuario" 
 Contraseña: "123"
@@ -137,6 +139,6 @@ Producto Final: https://albertoouu.github.io/03_SecurityCypher-/src/index.html
 
 ---
 
-## Deployment
+## 8. Deployment
 
 oct/8/2021
